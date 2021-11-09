@@ -1,9 +1,17 @@
 import { render, screen } from '@testing-library/react';
-import React from 'react';
 import { Provider } from 'react-redux';
 
-import App from './App';
 import { store } from './app/store';
+import App from './App';
+
+describe('App', () => {
+
+  it('should render title', () => {
+    renderApp();
+    expect(screen.getByText(/rrts-starter/i)).toBeInTheDocument();
+  });
+
+});
 
 function renderApp() {
   return render(
@@ -12,8 +20,3 @@ function renderApp() {
     </Provider>
   );
 }
-
-test('renders learn react link', () => {
-  renderApp();
-  expect(screen.getByText(/rrts-starter/i)).toBeInTheDocument();
-});
