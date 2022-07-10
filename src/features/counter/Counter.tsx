@@ -24,7 +24,9 @@ export function Counter(): React.ReactElement {
         >
           +
         </button>
-        <span className={styles.value}>{count}</span>
+
+        <h2 aria-label="Current Value" className={styles.value}>{count}</h2>
+
         <button
           className={styles.button}
           aria-label="Decrement value"
