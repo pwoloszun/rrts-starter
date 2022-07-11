@@ -29,6 +29,7 @@
     "@types/react": "~18.0.15",
     "@types/react-dom": "~18.0.6",
     "@types/react-redux": "~7.1.24",
+    "cross-env": "~7.0.3",
     "cypress": "~10.3.0",
     "json-server": "~0.17.0",
     "sinon": "~14.0.0",
@@ -41,7 +42,8 @@
     "test:watch": "react-scripts test --watch --maxWorkers=1 --no-watchman",
     "cypress:open": "TZ=UTC cypress open",
     "cypress:run": "TZ=UTC cypress run",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test:coverage": "cross-env CI=true yarn test -- --coverage"
   },
   "eslintConfig": {
     "extends": "react-app"
