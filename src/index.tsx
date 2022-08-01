@@ -8,7 +8,8 @@ import App from './App';
 import { store } from './app/store';
 import * as serviceWorker from './serviceWorker';
 
-const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container!);
 root.render(
   <React.StrictMode>
     <BrowserRouter>
