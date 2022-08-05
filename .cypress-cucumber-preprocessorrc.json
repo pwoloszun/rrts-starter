@@ -1,9 +1,10 @@
 {
   "nonGlobalStepDefinitions": true,
   "stepDefinitions": [
+    "cypress/e2e/[filepath].steps.ts",
+    "cypress/support/step_definitions/**/*.ts",
     "[filepath]/**/*.{js,ts}",
     "[filepath].{js,ts}",
-    "cypress/support/step_definitions/**/*.{js,ts}",
     "[filepath].steps.{js,ts}"
   ]
 }

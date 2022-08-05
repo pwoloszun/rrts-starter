@@ -40,7 +40,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --watchAll=false --maxWorkers=1",
     "test:watch": "react-scripts test --watch --maxWorkers=1 --no-watchman",
-    "cypress:open": "cross-env TZ=UTC cypress open",
+    "cypress:open": "cross-env TZ=UTC cypress open --e2e --browser chrome",
+    "cypress:open:config": "cross-env TZ=UTC cypress open",
     "cypress:run": "cross-env TZ=UTC cypress run",
     "eject": "react-scripts eject",
     "test:coverage": "cross-env CI=true yarn test -- --coverage"
